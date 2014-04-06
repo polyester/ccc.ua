@@ -1,0 +1,334 @@
+<registry>
+    
+
+    <record name="ccc.ua.violations">
+        <field type="plone.registry.field.Tuple">
+            <title>UA violations</title>
+            <value_type type="plone.registry.field.TextLine" />
+        </field>
+        <value>
+            <element>FoA: Denial of the right to form and/or join a union</element>
+            <element>FoA: Denial of the right to organise/union busting/ repression including discrimination and harassment against union members</element>
+            <element>FoA: Firing/dismissal due to union activities (including strikes) </element>
+            <element>FoA: Violence/arrest/jail due to union activities (including strikes)</element>
+            <element>FoA: Denial of the right to bargain collectively </element>
+            <element>LP: Unpaid wages/pay cuts/not being paid legal minimum wage</element>
+            <element>LP: Denial of legal entitlements/poor labour practices</element>
+            <element>LP: Forced overtime</element>
+            <element>LP: Dismissal</element>
+            <element>OHS: Death during strike</element>
+            <element>OHS: Death during Fire</element>
+            <element>OHS: Death In police custody</element>
+            <element>OHS: Health and Safety issues (other than death)</element>
+            <element>Factory closure</element>
+            <element>Unpaid compensation</element>
+            <element>Lock out</element>
+            <element>Cut and run</element>
+            <element>Other: Forced labour</element>
+            <element>Other: Mobility restrictions</element>
+            <element>Other: Child labour</element>
+            <element>Other: agency recruitment fees</element>
+            <element>Other: censorship</element>
+            <element>Other: deportation</element>
+            <element>Other: lack of reporting on code implementation</element>
+        </value>
+    </record>
+
+    <record name="ccc.ua.orgs">
+        <field type="plone.registry.field.Tuple">
+            <title>UA Organisations</title>
+            <value_type type="plone.registry.field.TextLine" />
+        </field>
+        <value>
+            <element>CCC International Secretariat</element>
+            <element>achACT</element>
+            <element>Campagna Abiti Puliti</element>
+            <element>Campana Ropa Limpia</element>
+            <element>CCC Norway</element>
+            <element>Clean Clothes Campaign Denmark</element>
+            <element>Clean Clothes Campaign Ireland</element>
+            <element>Clean Clothes Campaign Switzerland</element>
+            <element>Clean Clothes Campaign Austria</element>
+            <element>Clean Clothes Polska</element>
+            <element>Ethique sur l'etiquette</element>
+            <element>Kampagne fuer Saubere Kleidung</element>
+            <element>Kampanjen Rene Klaer</element>
+            <element>Labour Behind The Label</element>
+            <element>Puhtaat Vaatteet</element>
+            <element>Rena Klaeder</element>
+            <element>Schone Kleren Campagne</element>
+            <element>Schone Kleren Campagne Belgie</element>
+            <element>Oxfam Australia</element>
+            <element>Maquila Solidarity Network</element>
+            <element>WRC</element>
+            <element>Society for Labour and Development</element>
+        </value>
+    </record>
+
+
+    <record name="ccc.ua.countries">
+        <field type="plone.registry.field.Tuple">
+            <title>UA countries</title>
+            <value_type type="plone.registry.field.TextLine" />
+        </field>
+        <value>
+            <element>Afghanistan</element>
+            <element>Akrotiri</element>
+            <element>Albania</element>
+            <element>Algeria</element>
+            <element>American Samoa</element>
+            <element>Andorra</element>
+            <element>Angola</element>
+            <element>Anguilla</element>
+            <element>Antarctica</element>
+            <element>Antigua and Barbuda</element>
+            <element>Argentina</element>
+            <element>Armenia</element>
+            <element>Aruba</element>
+            <element>Ashmore and Cartier Islands</element>
+            <element>Australia</element>
+            <element>Austria</element>
+            <element>Azerbaijan</element>
+            <element>Bahamas, The</element>
+            <element>Bahrain</element>
+            <element>Bangladesh</element>
+            <element>Barbados</element>
+            <element>Bassas da India</element>
+            <element>Belarus</element>
+            <element>Belgium</element>
+            <element>Belize</element>
+            <element>Benin</element>
+            <element>Bermuda</element>
+            <element>Bhutan</element>
+            <element>Bolivia</element>
+            <element>Bosnia and Herzegovina</element>
+            <element>Botswana</element>
+            <element>Bouvet Island</element>
+            <element>Brazil</element>
+            <element>British Indian Ocean Territory</element>
+            <element>British Virgin Islands</element>
+            <element>Brunei</element>
+            <element>Bulgaria</element>
+            <element>Burkina Faso</element>
+            <element>Burma</element>
+            <element>Burundi</element>
+            <element>Cambodia</element>
+            <element>Cameroon</element>
+            <element>Canada</element>
+            <element>Cape Verde</element>
+            <element>Cayman Islands</element>
+            <element>Central African Republic</element>
+            <element>Chad</element>
+            <element>Chile</element>
+            <element>China</element>
+            <element>Christmas Island</element>
+            <element>Clipperton Island</element>
+            <element>Cocos (Keeling) Islands</element>
+            <element>Colombia</element>
+            <element>Comoros</element>
+            <element>Congo, Democratic Republic of the</element>
+            <element>Congo, Republic of the</element>
+            <element>Cook Islands</element>
+            <element>Coral Sea Islands</element>
+            <element>Costa Rica</element>
+            <element>Cote d'Ivoire</element>
+            <element>Croatia</element>
+            <element>Cuba</element>
+            <element>Cyprus</element>
+            <element>Czech Republic</element>
+            <element>Denmark</element>
+            <element>Dhekelia</element>
+            <element>Djibouti</element>
+            <element>Dominica</element>
+            <element>Dominican Republic</element>
+            <element>Ecuador</element>
+            <element>Egypt</element>
+            <element>El Salvador</element>
+            <element>Equatorial Guinea</element>
+            <element>Eritrea</element>
+            <element>Estonia</element>
+            <element>Ethiopia</element>
+            <element>Europa Island</element>
+            <element>Falkland Islands (Islas Malvinas)</element>
+            <element>Faroe Islands</element>
+            <element>Fiji</element>
+            <element>Finland</element>
+            <element>France</element>
+            <element>French Guiana</element>
+            <element>French Polynesia</element>
+            <element>French Southern and Antarctic Lands</element>
+            <element>Gabon</element>
+            <element>Gambia, The</element>
+            <element>Gaza Strip</element>
+            <element>Georgia</element>
+            <element>Germany</element>
+            <element>Ghana</element>
+            <element>Gibraltar</element>
+            <element>Glorioso Islands</element>
+            <element>Greece</element>
+            <element>Greenland</element>
+            <element>Grenada</element>
+            <element>Guadeloupe</element>
+            <element>Guam</element>
+            <element>Guatemala</element>
+            <element>Guernsey</element>
+            <element>Guinea</element>
+            <element>Guinea-Bissau</element>
+            <element>Guyana</element>
+            <element>Haiti</element>
+            <element>Heard Island and McDonald Islands</element>
+            <element>Holy See (Vatican City)</element>
+            <element>Honduras</element>
+            <element>Hong Kong</element>
+            <element>Hungary</element>
+            <element>Iceland</element>
+            <element>India</element>
+            <element>Indonesia</element>
+            <element>Iran</element>
+            <element>Iraq</element>
+            <element>Ireland</element>
+            <element>Isle of Man</element>
+            <element>Israel</element>
+            <element>Italy</element>
+            <element>Jamaica</element>
+            <element>Jan Mayen</element>
+            <element>Japan</element>
+            <element>Jersey</element>
+            <element>Jordan</element>
+            <element>Juan de Nova Island</element>
+            <element>Kazakhstan</element>
+            <element>Kenya</element>
+            <element>Kiribati</element>
+            <element>Korea, North</element>
+            <element>Korea, South</element>
+            <element>Kuwait</element>
+            <element>Kyrgyzstan</element>
+            <element>Laos</element>
+            <element>Latvia</element>
+            <element>Lebanon</element>
+            <element>Lesotho</element>
+            <element>Liberia</element>
+            <element>Libya</element>
+            <element>Liechtenstein</element>
+            <element>Lithuania</element>
+            <element>Luxembourg</element>
+            <element>Macau</element>
+            <element>Macedonia</element>
+            <element>Madagascar</element>
+            <element>Malawi</element>
+            <element>Malaysia</element>
+            <element>Maldives</element>
+            <element>Mali</element>
+            <element>Malta</element>
+            <element>Marshall Islands</element>
+            <element>Martinique</element>
+            <element>Mauritania</element>
+            <element>Mauritius</element>
+            <element>Mayotte</element>
+            <element>Mexico</element>
+            <element>Micronesia, Federated States of</element>
+            <element>Moldova</element>
+            <element>Monaco</element>
+            <element>Mongolia</element>
+            <element>Montserrat</element>
+            <element>Morocco</element>
+            <element>Mozambique</element>
+            <element>Namibia</element>
+            <element>Nauru</element>
+            <element>Navassa Island</element>
+            <element>Nepal</element>
+            <element>Netherlands</element>
+            <element>Netherlands Antilles</element>
+            <element>New Caledonia</element>
+            <element>New Zealand</element>
+            <element>Nicaragua</element>
+            <element>Niger</element>
+            <element>Nigeria</element>
+            <element>Niue</element>
+            <element>Norfolk Island</element>
+            <element>Northern Mariana Islands</element>
+            <element>Norway</element>
+            <element>Oman</element>
+            <element>Pakistan</element>
+            <element>Palau</element>
+            <element>Panama</element>
+            <element>Papua New Guinea</element>
+            <element>Paracel Islands</element>
+            <element>Paraguay</element>
+            <element>Peru</element>
+            <element>Philippines</element>
+            <element>Pitcairn Islands</element>
+            <element>Poland</element>
+            <element>Portugal</element>
+            <element>Puerto Rico</element>
+            <element>Qatar</element>
+            <element>Reunion</element>
+            <element>Romania</element>
+            <element>Russia</element>
+            <element>Rwanda</element>
+            <element>Saint Helena</element>
+            <element>Saint Kitts and Nevis</element>
+            <element>Saint Lucia</element>
+            <element>Saint Pierre and Miquelon</element>
+            <element>Saint Vincent and the Grenadines</element>
+            <element>Samoa</element>
+            <element>San Marino</element>
+            <element>Sao Tome and Principe</element>
+            <element>Saudi Arabia</element>
+            <element>Senegal</element>
+            <element>Serbia and Montenegro</element>
+            <element>Seychelles</element>
+            <element>Sierra Leone</element>
+            <element>Singapore</element>
+            <element>Slovakia</element>
+            <element>Slovenia</element>
+            <element>Solomon Islands</element>
+            <element>Somalia</element>
+            <element>South Africa</element>
+            <element>South Georgia and the South Sandwich Islands</element>
+            <element>Spain</element>
+            <element>Spratly Islands</element>
+            <element>Sri Lanka</element>
+            <element>Sudan</element>
+            <element>Suriname</element>
+            <element>Svalbard</element>
+            <element>Swaziland</element>
+            <element>Sweden</element>
+            <element>Switzerland</element>
+            <element>Syria</element>
+            <element>Taiwan</element>
+            <element>Tajikistan</element>
+            <element>Tanzania</element>
+            <element>Thailand</element>
+            <element>Timor-Leste</element>
+            <element>Togo</element>
+            <element>Tokelau</element>
+            <element>Tonga</element>
+            <element>Trinidad and Tobago</element>
+            <element>Tromelin Island</element>
+            <element>Tunisia</element>
+            <element>Turkey</element>
+            <element>Turkmenistan</element>
+            <element>Turks and Caicos Islands</element>
+            <element>Tuvalu</element>
+            <element>Uganda</element>
+            <element>Ukraine</element>
+            <element>United Arab Emirates</element>
+            <element>United Kingdom</element>
+            <element>United States</element>
+            <element>Uruguay</element>
+            <element>Uzbekistan</element>
+            <element>Vanuatu</element>
+            <element>Venezuela</element>
+            <element>Vietnam</element>
+            <element>Virgin Islands</element>
+            <element>Wake Island</element>
+            <element>Wallis and Futuna</element>
+            <element>West Bank</element>
+            <element>Western Sahara</element>
+            <element>Yemen</element>
+            <element>Zambia</element>
+            <element>Zimbabwe</element>
+        </value>
+    </record>        
+</registry>

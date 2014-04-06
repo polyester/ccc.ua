@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<rolemap>
+   <roles>
+	<role name="UAC" />
+   </roles>
+
+
+   <permissions>
+         <permission name="ccc.ua: Add Urgent Appeal" acquire="True">
+         	<role name="Manager" />
+         </permission>
+         <permission name="ccc.ua: View UA Coordinator information" acquire="True">
+          	<role name="UAC" />
+         </permission>       
+  </permissions>
+</rolemap>

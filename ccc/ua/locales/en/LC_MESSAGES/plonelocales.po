@@ -1,0 +1,8 @@
+msgid "date_format_long"
+msgstr "date_format_long"
+
+msgid "date_format_short"
+msgstr "date_format_short"
+
+msgid "time_format"
+msgstr "time_format"

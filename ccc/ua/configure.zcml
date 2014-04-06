@@ -1,0 +1,43 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:grok="http://namespaces.zope.org/grok"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="ccc.ua">
+
+  <!-- Include configuration for dependencies listed in setup.py -->
+  <includeDependencies package="." />
+  
+  <include package="collective.autopermission" />
+  <include package="plone.app.relationfield" />
+  <include package="plone.formwidget.autocomplete" />
+  <include package="plone.formwidget.contenttree" />
+  <permission id="ccc.ua.AddUA" title="ccc.ua: Add Urgent Appeal" />
+  <permission id="ccc.ua.uahidden" title="ccc.ua: View UA Coordinator information" />
+  <permission id="ccc.ua.uainfo" title="ccc.ua: View UA info" />
+
+  <!-- Grok the package to initialise schema interfaces and content classes -->
+  <grok:grok package="." />
+  
+  <i18n:registerTranslations directory="locales" />
+
+  <!-- Register an extension profile to make the product installable
+       in Plone -->
+  <genericsetup:registerProfile
+      name="default"
+      title="CleanClothes Urgent Appeals"
+      directory="profiles/default"
+      description="Extension profile for CleanClothes Urgent Appeals"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <!-- -*- extra stuff goes here -*- -->
+
+  <browser:resourceDirectory
+    name="ccc.ua"
+    directory="static" />
+
+</configure>
