@@ -136,15 +136,7 @@ class IUrgentAppeal(form.Schema, IImageScaleTraversable):
         required=False,
     )
 
-    made_public = schema.Bool(title=_(u"Urgent Appeal public"),required=False,)
 
-    dexterity.write_permission(sensitive_info='ccc.ua.uahidden')
-    dexterity.read_permission(sensitive_info='ccc.ua.uahidden')
-    sensitive_info = RichText(
-        title=_(u"Private information about the partners involved"),
-        description = _(u'This information will only be visible for UA Coordinators, never for partners themselves, even if they have access to this UA'),
-        required=False,
-        )
 
     form.fieldset('more_info',
         label=_(u"More info"),
@@ -257,7 +249,7 @@ class UrgentAppeal(dexterity.Container):
 # of this type by uncommenting the grok.name line below or by
 # changing the view class name and template filename to View / view.pt.
 
-class SampleView(grok.View):
+class View(dexterity.DisplayForm):
     grok.context(IUrgentAppeal)
     grok.require('zope2.View')
     
