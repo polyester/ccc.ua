@@ -83,24 +83,24 @@ class IUAUpdate(form.Schema, IImageScaleTraversable):
     """
     Update to Urgent Appeal
     """
-    
+
     # If you want a schema-defined interface, delete the form.model
     # line below and delete the matching file in the models sub-directory.
     # If you want a model-based interface, edit
     # models/ua_update.xml to define the content type
     # and add directives here as necessary.
-    
-    form.model("models/ua_update.xml")
 
-    
+#    form.model("models/ua_update.xml")
+
+
     update_date = schema.Date(title=_(u"Date this update was received"))
 
-    form.widget(uaorganisation=AutocompleteFieldWidget)
+#    form.widget(uaorganisation=AutocompleteFieldWidget)
     uaorganisation = schema.Choice(
         title=_(u"Organisation for this update"),
-        description = _(u'Just type away, it autocompletes'),
+        description = _(u''),
 #        source=uavocSourceBinder(),
-#        vocabulary=u"plone.principalsource.Groups", 
+#        vocabulary=u"plone.principalsource.Groups",
 #       source=CatalogQuerySourceBinder(portal_type='FSDDepartment',),
        source=uaorgSourceBinder(),
        required=True,
@@ -168,7 +168,7 @@ grok.global_adapter(date_receivedIndexer, name="update_date")
 
 class UAUpdate(dexterity.Item):
     grok.implements(IUAUpdate)
-    
+
     # Add your class methods and properties here
 
 
@@ -185,5 +185,5 @@ class UAUpdate(dexterity.Item):
 class SampleView(grok.View):
     grok.context(IUAUpdate)
     grok.require('zope2.View')
-    
+
     # grok.name('view')

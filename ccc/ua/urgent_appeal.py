@@ -73,7 +73,7 @@ class uacountrySourceBinder(object):
 
 class uaviolVocabulary(object):
     grok.implements(IVocabularyFactory)
-    
+
     def __call__(self, context):
         registry = queryUtility(IRegistry)
         terms = []
@@ -83,7 +83,7 @@ class uaviolVocabulary(object):
                 # the title (optional)
                 terms.append(SimpleVocabulary.createTerm(uaviol, uaviol.encode('utf-8'), uaviol))
         return SimpleVocabulary(terms)
- 
+
 grok.global_utility(uaviolVocabulary, name=u"ccc.ua.fixedviolations")
 
 # Interface class; used to define content-type schema.
@@ -92,14 +92,14 @@ class IUrgentAppeal(form.Schema, IImageScaleTraversable):
     """
     Container for all Urgent Appeal info
     """
-    
+
     # If you want a schema-defined interface, delete the form.model
     # line below and delete the matching file in the models sub-directory.
     # If you want a model-based interface, edit
     # models/urgent_appeal.xml to define the content type
     # and add directives here as necessary.
-    
-    form.model("models/urgent_appeal.xml")
+
+#    form.model("models/urgent_appeal.xml")
 
     date_received = schema.Date(title=_(u"Date this Urgent Appeal was received"))
 
@@ -107,29 +107,29 @@ class IUrgentAppeal(form.Schema, IImageScaleTraversable):
                 title=_(u"Current Status"),
                 values=[_(u'Ongoing'),_(u'Resolved'),_(u'Closed'),_(u'Unknown')]
         )
-    
-    form.widget(countries=AutocompleteMultiFieldWidget)
+
+#    form.widget(countries=AutocompleteMultiFieldWidget)
     countries = schema.Set(
         title=_(u"Countries"),
-        description = _(u'Just type away, it autocompletes'),
+        description = _(u'You can select multiple countries by using Ctrl-select'),
         value_type=schema.Choice(source=uacountrySourceBinder()),
         required=True,
         )
-    
+
 
     demands = RichText(
-        title=_(u"Demands"),    
+        title=_(u"Demands"),
         required=False,
-        )    
-    
+        )
+
 
     form.widget(violations=CheckBoxFieldWidget)
     violations = schema.Set(
         title=_(u"Key Violations"),
         description = _(u'You can select multiple items'),
         value_type=schema.Choice(vocabulary=(u"ccc.ua.fixedviolations")),
-        required=False,    
-        )  
+        required=False,
+        )
     specificviolations = RichText(
         title=_(u"Specific violations"),
         description = _(u'Anything not covered above'),
@@ -141,7 +141,7 @@ class IUrgentAppeal(form.Schema, IImageScaleTraversable):
     form.fieldset('more_info',
         label=_(u"More info"),
         fields = ['garment','accessories','sports_shoes','shoes','other_industry','total_workforce','percent_women'],
-    )    
+    )
 
     garment = schema.Bool(title=_(u"Garment Industry"),required=False,)
     accessories = schema.Bool(title=_(u"Accessoriers"),required=False,)
@@ -154,7 +154,7 @@ class IUrgentAppeal(form.Schema, IImageScaleTraversable):
     form.fieldset('stakeholders',
         label=_(u"Stakeholders"),
         fields = ['case_coordinator','seeking_assistance','type_assistance','affilliation','contact_info','other_orgs','target','company_ownership','company_clients'],
-    )    
+    )
 
     case_coordinator = schema.TextLine(title=_(u"Case Coordinator"),required=False,)
     seeking_assistance = RichText(title=_(u"Organisation or Union Seeking Assistance"),required=False,)
@@ -174,7 +174,7 @@ class IUrgentAppeal(form.Schema, IImageScaleTraversable):
     form.fieldset('after_closure',
         label=_(u"After Closure"),
         fields = ['date_finalised','outcomes_closure','company_evaluation','status_yearafter'],
-    )    
+    )
     date_finalised = schema.Date(title=_(u"Date Finalised"),required=False,)
     outcomes_closure = RichText(title=_(u"Outcomes at Closure"),required=False,)
     company_evaluation = RichText(title=_(u"Company Evaluation"),required=False,)
@@ -235,7 +235,7 @@ grok.global_adapter(date_receivedIndexer, name="date_received")
 
 class UrgentAppeal(dexterity.Container):
     grok.implements(IUrgentAppeal)
-    
+
     # Add your class methods and properties here
 
 
@@ -252,7 +252,7 @@ class UrgentAppeal(dexterity.Container):
 class View(dexterity.DisplayForm):
     grok.context(IUrgentAppeal)
     grok.require('zope2.View')
-    
+
     # grok.name('view')
 
 
